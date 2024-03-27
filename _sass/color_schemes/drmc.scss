@@ -1,0 +1,17 @@
+
+$body-background-color: $white !default;
+$body-heading-color: $primary-red;
+$body-text-color: #585754; // 80% black
+$link-color: $web-blue;
+$nav-child-link-color: $web-blue;
+$sidebar-color: $accent-fog-light; 
+$base-button-color: #f7f7f7 !default;
+$btn-primary-color: $accent-palo-alto-light;
+$code-background-color: $accent-fog-light;
+$feedback-color: darken($sidebar-color, 3%) !default;
+$table-background-color: $white !default;
+$search-background-color: $white !default;
+$search-result-preview-color: #585754; // 80% black
+
+
+@import "./vendor/OneLightJekyll/syntax";
