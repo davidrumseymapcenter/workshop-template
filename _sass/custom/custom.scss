@@ -1,1 +1,151 @@
-// custom SCSS (or CSS) goes here
+
+.label:not(g),
+.label-blue:not(g) {
+  background-color: $accent-sky-dark;
+}
+
+.label-green:not(g) {
+  background-color: $accent-palo-verde-light;
+}
+
+.label-purple:not(g) {
+  background-color: $accent-plum-light;
+}
+
+.label-red:not(g) {
+  background-color: $accent-spirited;
+}
+
+.label-yellow:not(g) {
+  color: $grey-dk-200;
+  background-color: $accent-illuminating;
+}
+
+.btn-primary {
+    @include btn-color($white, $btn-primary-color);
+  }
+  
+.btn-purple {
+    @include btn-color($white, $accent-plum-light);
+  }
+  
+.btn-blue {
+    @include btn-color($white, $accent-sky-dark);
+  }
+  
+.btn-green {
+    @include btn-color($white, $accent-bay-dark);
+  }
+
+p.highlight, blockquote.highlight {
+    background: rgba($accent-illuminating, 0.2);
+    border-left: $border-radius solid $accent-illuminating;
+    &::before {
+        color: $accent-illuminating;
+    }
+    > .highlight-title {
+      color: $accent-illuminating;
+    }
+}
+
+p.highlight-title, blockquote.highlight-title {
+    background: rgba($accent-illuminating, 0.2);
+    border-left: $border-radius solid $accent-illuminating;
+    &::before {
+        color: $accent-illuminating;
+    }
+    > p:first-child {
+      color: $accent-illuminating;
+    }
+}
+p.warning, blockquote.warning {
+    background: rgba($accent-spirited, 0.2);
+    border-left: $border-radius solid $accent-spirited;
+    &::before {
+        color: $accent-spirited;
+    }
+    > .warning-title {
+      color: $accent-spirited;
+    }
+}
+
+p.warning-title, blockquote.warning-title {
+    background: rgba($accent-spirited, 0.2);
+    border-left: $border-radius solid $accent-spirited;
+    &::before {
+        color: $accent-spirited;
+    }
+    > p:first-child {
+      color: $accent-spirited;
+    }
+}
+
+p.note, blockquote.note {
+    background: rgba($accent-sky, 0.2);
+    border-left: $border-radius solid $accent-sky;
+    &::before {
+        color: $accent-sky;
+    }
+    > .note-title {
+      color: $accent-sky;
+    }
+}
+
+p.note-title, blockquote.note-title {
+    background: rgba($accent-sky, 0.2);
+    border-left: $border-radius solid $accent-sky;
+    &::before {
+        color: $accent-sky;
+    }
+    > p:first-child {
+      color: $accent-sky;
+    }
+}
+
+p.important, blockquote.important {
+    background: rgba($accent-olive, 0.2);
+    border-left: $border-radius solid $accent-olive;
+    &::before {
+        color: $accent-olive;
+    }
+    > .important-title {
+      color: $accent-olive;
+    }
+}
+
+p.important-title, blockquote.important-title {
+    background: rgba($accent-olive, 0.2);
+    border-left: $border-radius solid $accent-olive;
+    &::before {
+        color: $accent-olive;
+    }
+    > p:first-child {
+      color: $accent-olive;
+    }
+}
+
+p.new, blockquote.new {
+    background: rgba($accent-palo-verde, 0.2);
+    border-left: $border-radius solid $accent-palo-verde;
+    &::before {
+        color: $accent-palo-verde;
+    }
+    > .new-title {
+      color: $accent-palo-verde;
+    }
+}
+
+p.new-title, blockquote.new-title {
+    background: rgba($accent-palo-verde, 0.2);
+    border-left: $border-radius solid $accent-palo-verde;
+    &::before {
+        color: $accent-palo-verde;
+    }
+    > p:first-child {
+      color: $accent-palo-verde;
+    }
+}
+
+a:not([class]) {
+    text-decoration: none;
+  }
